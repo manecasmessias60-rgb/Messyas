@@ -69,12 +69,12 @@ footer{padding:35px 5%;color:#777;text-align:center;border-top:1px solid #ffffff
 
 <script>
 const anime=[
-["Solo Leveling","Ação • Fantasia","https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=600&q=80"],
-["Attack on Titan","Ação • Drama","https://images.unsplash.com/photo-1618336753974-aae8e04506aa?auto=format&fit=crop&w=600&q=80"],
-["Demon Slayer","Ação • Sobrenatural","https://images.unsplash.com/photo-1541562232579-512a21360020?auto=format&fit=crop&w=600&q=80"],
-["One Piece","Aventura • Comédia","https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80"],
-["Jujutsu Kaisen","Ação • Fantasia","https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=600&q=80"],
-["Naruto","Ação • Aventura","https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=600&q=80"]
+["Solo Leveling","Ação • Fantasia","foto1.jpg"],
+["Attack on Titan","Ação • Drama","foto2.webp"],
+["Demon Slayer","Ação • Sobrenatural","foto3.jpg"],
+["One Piece","Aventura • Comédia","foto4.jpg"],
+["Jujutsu Kaisen","Ação • Fantasia","foto5.jpg"],
+["Naruto","Ação • Aventura","foto6.jpg"]
 ];
 function card(a){return `<article class="card" onclick="openAnime('${a[0]}')"><div class="poster" style="background-image:url('${a[2]}')"></div><div class="card-info"><h3>${a[0]}</h3><p>${a[1]}</p><span class="badge">HD</span></div></article>`}
 function render(list,id){document.getElementById(id).innerHTML=list.map(card).join("")}
